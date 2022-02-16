@@ -4,5 +4,14 @@
 
 
 {% block content %}
-    <h1>jbh</h1>
+    <div class="cr-wrapper">
+        <form method="post" enctype="multipart/form-data">
+            <h2 class="form-sub-title">Добавление товара</h2>
+            <p><input class="add-item-long" type="text" id="title" name="title" placeholder="Название товара"></p>
+            <p><textarea class="add-item-long-text" name="text" id="text" placeholder="Напишите описание"></textarea></p>
+            <p><input class="add-item-long" type="number" id="price" name="price" placeholder="Введите цену"></p>
+            <input type="submit" class="btn-dark" value="Отправить">
+
+        </form>
+    </div>
 {% endblock %}

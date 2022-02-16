@@ -19,12 +19,13 @@ class Item(db.Model):
     isActive = db.Column(db.Boolean, default=True)
 
     def __repr__(self) -> str:
-        return f"{self.id} - {self.title}"
+        return self.title
 
 
 @app.route("/")
 def get_main_page():
-    return render_template("index.html")
+    items = Item.query.all()
+    return render_template("index.html", data=items)
 
 
 @app.route("/about")
@@ -38,9 +39,8 @@ def create_item():
         title = request.form["title"]
         text = request.form["text"]
         price = request.form["price"]
-        isActive = request.form["isActive"]
 
-        item = Item(title=title, text=text, price=price, isActive=isActive)
+        item = Item(title=title, text=text, price=price)
 
         try:
             db.session.add(item)
