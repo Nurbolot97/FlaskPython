@@ -1,0 +1,38 @@
+.cr-wrapper {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 80px;
+    margin-top: 60px;
+    padding-bottom: 50px;
+    padding-left: 15px; 
+    padding-right: 30px;  
+    padding-top: 25px;
+    background-color: rgb(198, 236, 241);
+}
+
+.form-sub-title {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.btn-dark {
+    float: right;
+}
+
+.add-item-long {
+    width: 623px;
+}
+
+.add-item-long-text {
+    width: 623px;
+    height: 170px;
+}
+
+.card {
+    width: 32%; 
+    height: 250px; 
+    float: left; 
+    margin-left: 11px;
+    margin-bottom: 40px;
+}
